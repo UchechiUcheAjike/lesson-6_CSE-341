@@ -5,10 +5,10 @@
     "description": "Jobs API",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "lesson6-cse-341.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
@@ -28,6 +28,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
@@ -40,19 +43,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "status": {
                   "example": "any"
                 },
-                "lastName": {
+                "company": {
                   "example": "any"
                 },
-                "email": {
+                "title": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "position": {
                   "example": "any"
                 },
-                "birthday": {
+                "level": {
+                  "example": "any"
+                },
+                "YearsOfExperience": {
+                  "example": "any"
+                },
+                "createdAt": {
                   "example": "any"
                 }
               }
@@ -62,6 +71,9 @@
         "responses": {
           "201": {
             "description": "Created"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"
@@ -86,6 +98,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           }
         }
       },
@@ -104,19 +119,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "status": {
                   "example": "any"
                 },
-                "lastName": {
+                "company": {
                   "example": "any"
                 },
-                "email": {
+                "title": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "position": {
                   "example": "any"
                 },
-                "birthday": {
+                "level": {
+                  "example": "any"
+                },
+                "YearsOfExperience": {
+                  "example": "any"
+                },
+                "createdAt": {
                   "example": "any"
                 }
               }
@@ -126,6 +147,12 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"
@@ -143,8 +170,11 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"

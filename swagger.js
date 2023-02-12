@@ -5,11 +5,12 @@ const doc = {
         title: 'My API',
         description: 'Jobs API'
     },
-    // host: 'lesson5-cse-341.onrender.com',
-    host: 'localhost:8080',
+    host: 'lesson6-cse-341.onrender.com',
+    // host: 'localhost:8080',
+    
     //always remember to change http below to
     //https when you change host from local to render
-    schemes: ['http']
+    schemes: ['https']
 };
 
 const outputFile = './swagger.json';
